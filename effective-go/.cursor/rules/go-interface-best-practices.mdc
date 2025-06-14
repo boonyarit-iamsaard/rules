@@ -4,8 +4,8 @@ globs:
 alwaysApply: true
 ---
 ---
-type: Always
 description: Use interfaces effectively in Go.
+alwaysApply: true
 ---
 
 Interfaces are central to Go's design. Follow these best practices:

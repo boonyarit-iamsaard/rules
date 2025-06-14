@@ -4,8 +4,8 @@ globs:
 alwaysApply: true
 ---
 ---
-type: Always
 description: Follow Go naming conventions as outlined in Effective Go.
+alwaysApply: true
 ---
 
 Use the following naming conventions in Go:

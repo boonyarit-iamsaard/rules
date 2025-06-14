@@ -4,8 +4,8 @@ globs:
 alwaysApply: true
 ---
 ---
-type: Always
 description: Handle errors explicitly and idiomatically in Go.
+alwaysApply: true
 ---
 
 In Go, handle errors by returning them explicitly rather than using exceptions or panic.

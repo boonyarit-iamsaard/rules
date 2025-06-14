@@ -4,11 +4,11 @@ globs:
 alwaysApply: true
 ---
 ---
-type: Always
 description: Apply idiomatic Go style based on Effective Go.
+alwaysApply: true
 ---
 
-You are writing Go code following the guidelines in [Effective Go](https://go.dev/doc/effective_go)
+You are writing Go code following the guidelines in [Effective Go](mdc:https:/go.dev/doc/effective_go)
 
 - Use clear and simple declarations.
 - Prefer composition over inheritance.
