@@ -1,0 +1,22 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+---
+type: Always
+description: Apply idiomatic Go style based on Effective Go.
+---
+
+You are writing Go code following the guidelines in [Effective Go](https://go.dev/doc/effective_go)
+
+- Use clear and simple declarations.
+- Prefer composition over inheritance.
+- Avoid unnecessary parentheses.
+- Format all code using `gofmt`.
+- Write comments only where necessary, but always document exported names.
+- Use `MixedCaps` for function and variable names.
+- Use `defer` for resource cleanup.
+- Favor receiver methods with pointer receivers unless a value receiver is explicitly needed.
+- Keep functions short and focused.
+- Return errors explicitly instead of panicking.

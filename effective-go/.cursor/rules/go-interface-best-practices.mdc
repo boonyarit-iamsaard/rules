@@ -1,0 +1,24 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+---
+type: Always
+description: Use interfaces effectively in Go.
+---
+
+Interfaces are central to Go's design. Follow these best practices:
+
+- Define small interfaces (preferably one or two methods)
+- Let types implement interfaces implicitly—no need for `implements`
+- Use interface embedding to compose behavior
+- Accept interfaces, return structs
+- Use empty interface (`interface{}`) only when absolutely necessary
+- Prefer concrete types unless abstraction is required
+- Example:
+
+  ```go
+  type Stringer interface {
+      String() string
+  }

@@ -1,0 +1,19 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+---
+type: Always
+description: Follow Go naming conventions as outlined in Effective Go.
+---
+
+Use the following naming conventions in Go:
+
+- **Packages**: lowercase, singular (e.g., `bytes`, `fmt`, `os`)
+- **Variables/Functions**: `camelCase` (also known as `MixedCaps`)
+- **Constants**: use `UPPER_CASE` if they're unexported; otherwise, `CamelCase` if exported
+- **Interfaces**: single method interface named `<Method>er` (e.g., `io.Reader`, `http.Handler`)
+- **Getters**: name as `Owner()` instead of `GetOwner()`
+- **Receiver Names**: short and consistent (e.g., `r` for Reader, `w` for Writer)
+- **Function Names**: should clearly state intent (e.g., `NewServer`, `ValidateRequest`)

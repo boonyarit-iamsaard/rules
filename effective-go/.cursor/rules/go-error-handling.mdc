@@ -1,0 +1,24 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+---
+type: Always
+description: Handle errors explicitly and idiomatically in Go.
+---
+
+In Go, handle errors by returning them explicitly rather than using exceptions or panic.
+
+- Always check for errors after function calls that return `(value, error)`
+- Use the "comma ok" idiom for multiple returns like map lookups
+- Prefer sentinel errors (`io.EOF`) or wrapped errors (`fmt.Errorf`, `%w`) when appropriate
+- Only use `panic` in exceptional cases (e.g., initialization failures)
+- Use `recover` only in very specific, controlled contexts
+- Example:
+
+  ```go
+  data, err := os.ReadFile("file.txt")
+  if err != nil {
+      log.Fatal(err)
+  }

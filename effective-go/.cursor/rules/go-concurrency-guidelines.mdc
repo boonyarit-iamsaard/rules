@@ -1,0 +1,28 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+---
+type: Always
+description: Best practices for concurrent Go code.
+---
+
+When writing concurrent Go code:
+
+- Prefer goroutines and channels over mutexes
+- Use `sync.WaitGroup` to wait for multiple goroutines
+- Close channels when no more sends will happen
+- Use `select` statements to coordinate multiple channel operations
+- Avoid shared memory between goroutines where possible
+- Always clean up resources with `defer` inside goroutines
+- Protect against race conditions using atomic types or sync primitives
+- Example:
+
+  ```go
+  ch := make(chan int)
+  go func() {
+      defer close(ch)
+      ch <- 42
+  }()
+  fmt.Println(<-ch)
